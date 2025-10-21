@@ -26,6 +26,28 @@ cd risk-premia-app-py
 ```
 
 2. Install dependencies:
+
+### Option A: Using uv (recommended)
+
+[uv](https://github.com/astral-sh/uv) is a fast Python package installer and resolver. To install with uv:
+
+```bash
+# Install uv if you haven't already
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Sync dependencies from pyproject.toml
+uv sync
+```
+
+This will create a virtual environment and install all dependencies specified in `pyproject.toml`.
+
+To run commands in the uv environment:
+```bash
+uv run streamlit run app.py
+```
+
+### Option B: Using pip
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -33,6 +55,13 @@ pip install -r requirements.txt
 ## Usage
 
 Run the Streamlit application:
+
+**If using uv:**
+```bash
+uv run streamlit run app.py
+```
+
+**If using pip:**
 ```bash
 streamlit run app.py
 ```

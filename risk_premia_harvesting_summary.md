@@ -1,4 +1,4 @@
-# Risk Premia Harvesting: A simple srategic approach to long-term wealth building
+# Risk Premia Harvesting: A simple strategic approach to long-term wealth building
 
 ## The Core Premise
 

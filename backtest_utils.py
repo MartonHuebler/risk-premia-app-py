@@ -6,6 +6,7 @@ Translated from backtest_utils.R
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 import seaborn as sns
 from config import MAINT_MARGIN
 
@@ -583,6 +584,10 @@ def trades_chart(positions, title, **kwargs):
     ax.set_title(title)
     ax.legend(loc='best')
 
+    # Format x-axis to show years
+    ax.xaxis.set_major_locator(mdates.YearLocator())
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
+
     fig.tight_layout()
     return fig
 
@@ -600,6 +605,10 @@ def comm_chart(positions, title, **kwargs):
     ax.set_ylabel('Commission ($)')
     ax.set_title(title)
     ax.legend(loc='best')
+
+    # Format x-axis to show years
+    ax.xaxis.set_major_locator(mdates.YearLocator())
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
 
     fig.tight_layout()
     return fig
@@ -620,6 +629,10 @@ def comm_pct_exp_chart(positions, title, **kwargs):
     ax.set_ylabel('Commission (% of Exposure)')
     ax.set_title(title)
     ax.legend(loc='best')
+
+    # Format x-axis to show years
+    ax.xaxis.set_major_locator(mdates.YearLocator())
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y'))
 
     fig.tight_layout()
     return fig

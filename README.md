@@ -4,6 +4,8 @@ Simple Risk Premia Strategy App in Python, porting the interactive Shiny applica
 
 The strategy is not about market timing, but about balancing long positions of assets that tend to go up in most economic environments. This application allows you to explore buy-and-hold, equal weight rebalancing, and risk parity approaches.
 
+See the page on the [background of the Risk Premia Harvesting app and toolkit](risk_premia_harvesting_summary.md) for the core premise behind the strategy and tool.
+
 ## Original R Application
 
 This is a Python port of the R Shiny application available at: https://github.com/Robot-Wealth/risk-premia-app

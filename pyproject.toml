@@ -21,10 +21,3 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/MartonHuebler/risk-premia-app-py"
 Repository = "https://github.com/MartonHuebler/risk-premia-app-py"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[tool.uv]
-dev-dependencies = []

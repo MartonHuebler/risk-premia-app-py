@@ -528,7 +528,7 @@ def summary_performance(positions, initial_equity, start_date, end_date):
         'Costs(%Profit)': [costs_pct_profit]
     })
 
-    return result
+    return result.round(2)
 
 
 # Plotting functions
